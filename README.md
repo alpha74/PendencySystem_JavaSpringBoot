@@ -15,3 +15,22 @@ This is not the Code in actual interview.
 Done as a practice for this problem statement.
 Hence, design is done more thoughtfully.
 ```
+
+
+### Code/Run
+
+- Java8, Maven, IntelliJ(Community)
+
+- Driver class `TrackingServiceTest.java`
+- All necessary code in `src` dir
+
+
+### Understanding the Working
+
+- To understand the working, read Problem Statement thoroughly
+- Then explore `dir` in this order:
+  1. Entities
+  2. Repository
+  3. `TrackingServiceTest.java`
+  4. Then, deeply go through Services
+  
