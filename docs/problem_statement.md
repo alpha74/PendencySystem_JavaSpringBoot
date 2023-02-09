@@ -9,22 +9,21 @@
 - The following is a guide for the interfaces you may have in your system.
 
   1. An interface to start tracking the counts for the entity. (increment count by 1)  
-      void startTracking (Integer id, List hierarchicalTags);  
+      `void startTracking (Integer id, List hierarchicalTags);`
       where,  
-      id = Identifier of the entity  
-      hierarchicalTags = Tags that are properties of the entity. These tags are hierarchical in nature.
+      `id` = Identifier of the entity  
+      `hierarchicalTags` = Tags that are properties of the entity. These tags are hierarchical in nature.
   2. An interface to stop tracking the entity that is already being tracked (reduce count by 1)  
-      void stopTracking (Integer id);  
+      `void stopTracking (Integer id);` 
       where,  
-      id = Identifier of the transaction
+      `id` = Identifier of the transaction
   3. An interface to get counts of entity being tracked, that match the tags supplied  
-      Integer getCounts (List tags);  
+      `Integer getCounts (List tags);  `
       where,  
-      tags = a hierarchy of tags, for which counts are to be retrieved  
-      Sample  
-      The following is just a sample for your understanding.  
-      Please remember: You are expected to write the system which mirrors production quality code, rather than just implementing these functions  
-      The sample below shows the ability to track in-flight transactions happening across instruments, states and cities:
+      `tags` = a hierarchy of tags, for which counts are to be retrieved  
+     
+- Please remember: You are expected to write the system which mirrors production quality code, rather than just implementing these functions . 
+- The sample below shows the ability to track in-flight transactions happening across instruments, states and cities.
 
 
 ---------
